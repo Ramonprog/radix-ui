@@ -1,6 +1,6 @@
 
 import * as Dialog from '@radix-ui/react-dialog';
-import { CustomContent } from './style';
+import { CustomContent, CustomOverlay } from './style';
 
 
 const DialogComponent = () => {
@@ -10,7 +10,7 @@ const DialogComponent = () => {
                 <button className="Button violet">Edit profile</button>
             </Dialog.Trigger>
             <Dialog.Portal>
-                <Dialog.Overlay className="DialogOverlay" />
+                <CustomOverlay className="DialogOverlay" />
                 <CustomContent className="DialogContent">
                     <Dialog.Title className="DialogTitle">Edit profile</Dialog.Title>
                     <Dialog.Description className="DialogDescription">
